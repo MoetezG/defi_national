@@ -34,7 +34,7 @@ const loginUser = async (req, res) => {
       httpOnly: true,
       maxAge: 30 * 24 * 60 * 60 * 1000,
     })
-    .json({ status: "ok", user });
+    .json({ status: "ok", token });
 };
 
 module.exports = {
